@@ -1,0 +1,14 @@
+@use "src/assets/styles/colors";
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px;
+  background-color: colors.$main_color;
+}

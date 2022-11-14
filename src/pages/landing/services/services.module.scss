@@ -1,0 +1,26 @@
+.container {
+  width: calc(100% + 40px);
+  height: calc(100vh - 80px);
+  transform: translateX(-20px);
+  display: grid;
+  grid-template-rows: 1fr 40px;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  background-position: center center;
+  padding: 24px;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
