@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Button } from "@mui/material";
 
 import { servicesData } from "./services.constants";
 import { ServicesBox } from "./services-box/services-box";
 
+import { ReactComponent as Arrow } from "assets/icons/arrow.svg";
 import background from "assets/images/services.webp";
 
 import styles from "./services.module.scss";
@@ -26,8 +26,8 @@ export const Services = () => {
       <ServicesBox item={servicesData[slide]} />
 
       <div className={styles.buttons}>
-        <Button onClick={prevSlide}>prev</Button>
-        <Button onClick={nextSlide}>next</Button>
+        <Arrow onClick={prevSlide} className={styles.prev} />
+        <Arrow onClick={nextSlide} className={styles.next} />
       </div>
     </div>
   );
