@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, Typography } from "@mui/material";
 
+import whoWeAreImage from "assets/images/who-we-are.webp";
+
 import styles from "./who-we-are.module.scss";
 
 export const WhoWeAre = () => {
@@ -17,6 +19,9 @@ export const WhoWeAre = () => {
           galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
         </Typography>
       </div>
+
+      <img src={whoWeAreImage} className={styles.image} alt="who we are" />
+
       <Button className={styles.button}>Learn more</Button>
     </div>
   );
