@@ -1,0 +1,72 @@
+@use "src/assets/styles/colors";
+@use "src/assets/styles/breakpoints";
+
+.hero {
+  height: calc(100vh - 80px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: breakpoints.$media_l){
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 400px
+  }
+}
+
+.content {
+  color: colors.$font_color;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media screen and (min-width: breakpoints.$media_l){
+
+  }
+}
+
+.text {
+  text-align: center !important;
+  font-size: 24px !important;
+
+  span {
+    font-size: 42px !important;
+  }
+
+  @media screen and (min-width: breakpoints.$media_l){
+    font-size: 32px !important;
+
+    span {
+      font-size: 54px !important;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (min-width: breakpoints.$media_l){
+    flex-direction: row-reverse;
+    gap: 32px;
+  }
+}
+
+.button {
+  width: 200px !important;
+  height: 50px !important;
+  align-self: center !important;
+  color: colors.$font_color !important;
+  border-radius: 8px !important;
+  border: 2px solid #fff !important;
+}
+
+.touchButton {
+  @extend .button;
+
+  background-color: colors.$accent_color !important;
+}

@@ -1,0 +1,119 @@
+@use "src/assets/styles/colors";
+@use "src/assets/styles/breakpoints";
+
+.container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  margin-bottom: 64px;
+
+  * {
+    font-family: 'Montserrat' !important;
+  }
+}
+
+.header {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  background: #535353;
+  padding: 24px;
+
+  h2 {
+    color: colors.$font_color !important;
+    font-size: 46px !important;
+    text-align: center !important;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.button {
+  width: 200px !important;
+  height: 50px !important;
+  align-self: center !important;
+  color: colors.$font_color !important;
+  border-radius: 8px !important;
+  border: 2px solid #fff !important;
+}
+
+.touchButton {
+  @extend .button;
+
+  background-color: colors.$accent_color !important;
+}
+
+
+.getInTouchButton {
+  background-color: #fff;
+}
+
+.content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  text-align: center !important;
+}
+
+.contentHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  h2 {
+    font-size: 32px !important;
+  }
+
+  h4 {
+    font-size: 20px !important;
+  }
+}
+
+.itemsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+
+  @media screen and (min-width: breakpoints.$media_l ) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1600px;
+    align-self: center;
+  }
+}
+
+.itemBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero {
+  background-color: colors.$main_color;
+  height: 150px;
+  border-radius: 32px;
+  width: 80%;
+  align-self: center;
+}
+
+.buttonItem {
+  width: 200px !important;
+  height: 50px !important;
+  align-self: center !important;
+  color: #000 !important;
+  border-radius: 8px !important;
+  border: 2px solid #000 !important;
+}

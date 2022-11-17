@@ -1,0 +1,31 @@
+@use "src/assets/styles/colors";
+@use "src/assets/styles/breakpoints";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  background-color: colors.$main_color;
+
+  @media screen and (min-width:  breakpoints.$media_l) {
+    height: 400px;
+  }
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  @media screen and (min-width:  breakpoints.$media_l) {
+    max-width: 1200px;
+  }
+}
+
+.link {
+  padding: 10px 0;
+  color: #fff !important;
+}

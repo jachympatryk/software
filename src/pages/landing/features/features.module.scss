@@ -1,0 +1,61 @@
+@use "src/assets/styles/breakpoints";
+@use "src/assets/styles/colors";
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+
+  @media screen and (min-width: breakpoints.$media_l) {
+    height: 100vh;
+    max-width: 1400px;
+    align-self: center;
+    justify-content: space-evenly;
+  }
+
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-auto-rows: 250px;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+
+  @media screen and (min-width: breakpoints.$media_l) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  @media screen and (min-width: breakpoints.$media_xl) {
+    gap: 60px;
+  }
+}
+
+.content {
+  display: none;
+
+  @media screen and (min-width: breakpoints.$media_l) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    text-align: center !important;
+    color: #FFF !important;
+
+    h4 {
+      font-size: 20px !important;
+      color: colors.$font_color !important;
+      font-family: "Montserrat" !important;
+    }
+
+    * {
+      font-family: "Montserrat" !important;
+
+    }
+  }
+}

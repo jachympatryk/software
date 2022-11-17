@@ -1,0 +1,20 @@
+@use "src/assets/styles/colors";
+@use "src/assets/styles/breakpoints";
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px;
+  background-color: colors.$main_color;
+  overflow: hidden;
+
+  @media screen and (min-width: breakpoints.$media_l ) {
+    padding: 36px;
+  }
+}

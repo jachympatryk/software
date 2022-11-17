@@ -7,9 +7,9 @@ export const LANDING_PAGE: RouteConstant = {
   showNavigation: true,
 };
 
-export const LOGIN_PAGE: RouteConstant = {
-  path: "/login",
-  name: "Login",
+export const ABOUT_PAGE: RouteConstant = {
+  path: "/about",
+  name: "About Page",
   auth: false,
-  showNavigation: false,
+  showNavigation: true,
 };

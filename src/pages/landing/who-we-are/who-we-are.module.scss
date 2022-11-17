@@ -1,0 +1,75 @@
+@use "src/assets/styles/colors";
+@use "src/assets/styles/breakpoints";
+
+.container {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+
+  @media screen and (min-width: breakpoints.$media_l){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    align-self: center;
+    gap: 60px;
+  }
+}
+
+.image {
+  display: none;
+
+  @media screen and (min-width: breakpoints.$media_l) {
+    width: 100%;
+    border-radius: 16px;
+    display: block;
+  }
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  & > * {
+    font-family: "Montserrat" !important;
+    color: colors.$font_color !important;
+  }
+
+  h3 {
+    color: colors.$accent_color !important;
+    font-size: 16px !important;
+  }
+
+  h2 {
+    font-size: 32px !important;
+    font-weight: 700 !important;
+  }
+
+  h4 {
+    font-size: 18px !important;
+    text-align: center !important;
+  }
+}
+
+.button {
+  width: 200px !important;
+  height: 50px !important;
+  align-self: center !important;
+  border-radius: 8px !important;
+  background-color: colors.$accent_color !important;
+  font-family: "Montserrat" !important;
+  color: colors.$font_color !important;
+
+  @media screen and (min-width: breakpoints.$media_l){
+    align-self: flex-start !important;
+    justify-self:center !important;
+  }
+
+}
