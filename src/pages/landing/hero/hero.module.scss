@@ -9,8 +9,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-attachment: fixed;
 
-  @media screen and (min-width: breakpoints.$media_l){
+  @media screen and (min-width: breakpoints.$media_l) {
     justify-content: flex-start;
     align-items: flex-end;
     padding: 400px
@@ -23,7 +24,7 @@
   flex-direction: column;
   gap: 24px;
 
-  @media screen and (min-width: breakpoints.$media_l){
+  @media screen and (min-width: breakpoints.$media_l) {
 
   }
 }
@@ -36,7 +37,7 @@
     font-size: 42px !important;
   }
 
-  @media screen and (min-width: breakpoints.$media_l){
+  @media screen and (min-width: breakpoints.$media_l) {
     font-size: 32px !important;
 
     span {
@@ -50,7 +51,7 @@
   flex-direction: column;
   gap: 16px;
 
-  @media screen and (min-width: breakpoints.$media_l){
+  @media screen and (min-width: breakpoints.$media_l) {
     flex-direction: row-reverse;
     gap: 32px;
   }

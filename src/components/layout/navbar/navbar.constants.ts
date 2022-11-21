@@ -1,20 +1,16 @@
-import { ABOUT_PAGE, LANDING_PAGE } from "constants/routes.constants";
+import { ABOUT_PAGE, LANDING_PAGE, OFFER_PAGE } from "constants/routes.constants";
 
 export const navbarData = [
   {
-    label: "Oferty",
+    label: "Home page",
     path: LANDING_PAGE.path,
   },
   {
-    label: "O nas",
+    label: "About us",
     path: ABOUT_PAGE.path,
   },
   {
-    label: "Oferty",
-    path: LANDING_PAGE.path,
-  },
-  {
-    label: "Oferty",
-    path: LANDING_PAGE.path,
+    label: "Offer",
+    path: OFFER_PAGE.path,
   },
 ];

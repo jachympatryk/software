@@ -13,3 +13,10 @@ export const ABOUT_PAGE: RouteConstant = {
   auth: false,
   showNavigation: true,
 };
+
+export const OFFER_PAGE: RouteConstant = {
+  path: "/offer",
+  name: "Offers page",
+  auth: false,
+  showNavigation: true,
+};

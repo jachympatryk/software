@@ -13,8 +13,9 @@
   margin-top: 40px;
   background-position: center center;
   padding: 24px;
+  background-attachment: fixed;
 
-  @media screen and (min-width: breakpoints.$media_l ) {
+  @media screen and (min-width: breakpoints.$media_l) {
     grid-template-rows: 100%;
   }
 }
